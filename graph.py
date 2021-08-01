@@ -6,7 +6,8 @@ graph = {
     'p': ['d']
 }
 
-def bfs(graph,start):
+
+def bfs(graph, start):
     queue = deque(start)
     visited = deque(start)
     while queue:
@@ -18,8 +19,9 @@ def bfs(graph,start):
                     queue.append(i)
     return visited
 
-def dfs(graph,start):
+
+def dfs(graph, start):
     visited = deque(start)
 
 
-print(bfs(graph,'a'))
+print(bfs(graph, 'a'))
